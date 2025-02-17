@@ -25,6 +25,57 @@
   --ff-sans-normal: "Inter", sans-serif;
 }
 
-.ff-sans-normal {
+/*? no need since we will this only ff style to the body */
+/* .ff-sans-normal {
   font-family: var(--ff-sans-normal);
+} */
+
+/**=======================
+ * RESET
+ * ref: https://www.joshwcomeau.com/css/custom-css-reset/
+ *========================**/
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: var(--ff-sans-normal);
+  font-size: var(--fs-200);
+  color: #fff;
+  background-color: hsl(var(--clr-gray-900));
+
+  line-height: 1.5;
+  /* https://mayank1513.medium.com/understanding-dvh-the-css-dynamic-viewport-height-9ddf70a77c6c#:~:text=However%2C%20the%20key%20difference%20lies,in%20the%20browser's%20viewport%20size. */
+  min-height: 100dvh;
+  /* improve text rendering on mac */
+  -webkit-font-smoothing: antialiased;
+
+  /* layout */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+}
+
+img {
+  /* https://www.youtube.com/watch?v=345V2MU3E_w */
+  font-style: italic;
+
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+/* avoid text overflows */
+p,
+h1 {
+  overflow-wrap: break-word;
 }
