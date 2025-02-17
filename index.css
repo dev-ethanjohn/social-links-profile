@@ -1,0 +1,30 @@
+/**=======================
+ * CUSTOM PROPERTIES
+ *========================**/
+
+/* FONT */
+@font-face {
+  font-family: "Inter";
+  src: url(./assets/fonts/Inter-VariableFont_slnt\wght.ttf) format("truetype");
+  font-weight: 400 900;
+  font-style: normal;
+}
+
+:root {
+  /* colors */
+  --clr-gray-900: 0 0% 8%;
+  --clr-gray-800: 0 0% 12%;
+  --clr-gray-700: 0 0% 20%;
+  --clr-green: 75 94% 57%;
+
+  /* foot-size */
+  --fs-500: clamp(1.25rem, 1.8vw, 1.5rem); /* 20px → 24px */
+  --fs-200: clamp(0.75rem, 1vw, 0.875rem); /* 12px → 14px */
+
+  /* font-family */
+  --ff-sans-normal: "Inter", sans-serif;
+}
+
+.ff-sans-normal {
+  font-family: var(--ff-sans-normal);
+}
