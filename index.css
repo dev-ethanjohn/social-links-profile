@@ -193,13 +193,16 @@ h1 {
   transition: inherit;
 }
 
-.social-links li:hover {
+.social-links li:hover,
+.social-links li:focus-within {
   background-color: hsl(var(--clr-green));
   color: hsl(var(--clr-gray-900));
 }
 
-.social-links a:hover {
+.social-links a:hover,
+.social-links a:focus {
   color: hsl(var(--clr-gray-900));
+  outline: none;
 }
 
 @media (max-width: 23.4375em) {
