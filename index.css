@@ -58,11 +58,6 @@ body {
   min-height: 100dvh;
   /* improve text rendering on mac */
   -webkit-font-smoothing: antialiased;
-
-  /* layout */
-  /* place-items: center; */
-  /* align-items: center; */
-  /* place-items: start center; */
   align-items: center;
   font-weight: bold;
 }
