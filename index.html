@@ -13,27 +13,18 @@
 
   <title>Frontend Mentor | Social links profile</title>
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution {
-      font-size: 11px;
-      text-align: center;
-    }
-
-    .attribution a {
-      color: hsl(228, 45%, 44%);
-    }
-  </style>
 </head>
 
-<body>
+<body class="grid">
   <main>
-    <article class="profile-card flex">
+    <article class="profile-card grid">
+      <div class="profile-image-container flex">
+        <img class="profile-image" src="./assets/images/avatar-jessica.jpeg" alt="Profile picture of Jessica">
+      </div>
 
-      <img class="profile-image" src="./assets/images/avatar-jessica.jpeg" alt="Profile picture of Jessica">
 
 
-      <header class="profile-header flex">
+      <header class="profile-header grid">
         <h1 class="profile-name fs-600">Jessica Randal</h1>
         <p class="location">London, United Kingdom</p>
       </header>
@@ -43,8 +34,17 @@
       </p>
 
       <!-- social links -->
-      <nav>
+      <!-- <nav>
         <ul class="social-links flex">
+          <li><a class="fs-300" href="#">GitHub</a></li>
+          <li><a class="fs-300" href="#">Frontend Mentor</a></li>
+          <li><a class="fs-300" href="#">LinkedIn</a></li>
+          <li><a class="fs-300" href="#">Twitter</a></li>
+          <li><a class="fs-300" href="#">Instagram</a></li>
+        </ul>
+      </nav> -->
+      <nav>
+        <ul class="social-links grid">
           <li><a class="fs-300" href="#">GitHub</a></li>
           <li><a class="fs-300" href="#">Frontend Mentor</a></li>
           <li><a class="fs-300" href="#">LinkedIn</a></li>
