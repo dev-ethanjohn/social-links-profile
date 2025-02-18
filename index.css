@@ -181,7 +181,7 @@ h1 {
 }
 
 .social-links li {
-  padding-block: 0.625rem;
+  padding: 0.625rem;
   background-color: hsl(var(--clr-gray-700));
   border-radius: 0.5rem;
   transition: all 200ms ease-in-out;
